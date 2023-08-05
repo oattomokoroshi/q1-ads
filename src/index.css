@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"),
+    url("./fonts/Roboto-Regular.ttf") format("truetype");
+  line-height: 1.17;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots {
+  bottom: -58px !important;
+  right: -5px;
+}
+
+.slick-dots li {
+  position: relative !important;
+  display: inline-block !important;
+  margin: 0px 0px 0px 0px !important;
+  cursor: pointer !important;
+}
+
+.slick-active > #pagingDot {
+  background-color: #5c3caf;
+}
